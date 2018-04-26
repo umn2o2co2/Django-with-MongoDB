@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create</title>
+  </head>
+  <body>
+    <form action="{% url 'create' %}" method="post">
+      {% csrf_token %}
+      <input type="text" name="txt">
+      <button type="submit" name="button">Create</button>
+    </form>
+  </body>
+</html>
