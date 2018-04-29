@@ -10,6 +10,7 @@
     <h3>{{test.id}}. {{ test.text }}</h3>
     <a href="{% url 'update' test.id %}"><button>Update</button></a>
     <a href="{% url 'delete' test.id %}"><button>Delete</button></a>
+    <a href="{% url 'details' test.id %}"><button>Details</button></a>
     {% endfor %}
   </body>
 </html>
