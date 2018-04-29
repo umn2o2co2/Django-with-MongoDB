@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Read</title>
+  </head>
+  <body>
+    <a href="{% url 'create' %}"><button>Create New</button></a>
+    {% for test in object_list %}
+    <h3>{{test.id}}. {{ test.text }}</h3>
+    <a href="{% url 'update' test.id %}"><button>Update</button></a>
+    <a href="{% url 'delete' test.id %}"><button>Delete</button></a>
+    {% endfor %}
+  </body>
+</html>

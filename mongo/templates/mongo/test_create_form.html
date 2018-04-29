@@ -5,10 +5,10 @@
     <title>Create</title>
   </head>
   <body>
-    <form action="{% url 'create' %}" method="post">
+    <form action="" method="post">
       {% csrf_token %}
-      <input type="text" name="txt">
-      <button type="submit" name="button">Create</button>
+      {{ form.as_p }}
+      <input type="submit" value="Save">
     </form>
   </body>
 </html>
